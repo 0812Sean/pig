@@ -28,7 +28,7 @@ app.post('/api/send-order', (req, res) => {
   }
 
   const emailContent = `
-    <h3>公主殿下明天想吃的：</h3>
+    <h3>公主殿下明天想要的：</h3>
     <ul>
       ${items.map((item) => `<li>${item.category} - ${item.name}</li>`).join('')}
     </ul>
